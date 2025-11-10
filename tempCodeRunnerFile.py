@@ -1,1 +1,0 @@
-print ("Conditions tags found:", svgs_elements)
