@@ -44,7 +44,6 @@ Example:
 Popular Cities Forecast
 Date: 10/11/2025
 
-============================================================
 | City         |   Temperature (°C) | Condition           |
 |--------------|--------------------|---------------------|
 | Beijing      |                  5 | Sunny               |
@@ -52,7 +51,6 @@ Date: 10/11/2025
 | Buenos Aires |                 20 | Clear               |
 | Cairo        |                 20 | Partly Cloudy       |
 ...
-============================================================
 
 ### 2. output.json
 A machine-readable JSON file containing the same data, structured with a title, date, and a list of city objects.
