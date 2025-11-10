@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+from datetime import date
+from tabulate import tabulate
+import json
 
 def get_forecast_data():
     url = 'https://www.accuweather.com/en/world-weather'
@@ -33,6 +36,34 @@ def get_forecast_data():
         return data
     return False
 
+def get_forecast_txt():
+    data = get_forecast_data()
+    
+    if data:
+        today = date.today().strftime("%d/%m/%Y")
+        with open('output.txt', 'w') as f:
+            f.write('Popular Cities Forecast'+'\n')
+            f.write(f'Date: {today}\n')
+            f.write('='*60 + '\n')
+            table = tabulate(data, headers=['City','Temperature (°C)','Condition'],tablefmt='github')
+            f.write(table)
+            f.write('\n'+'='*60 + '\n')
+
+def get_forecast_json():
+    data = get_forecast_data()
+
+    if data:
+        today = date.today().strftime("%d/%m/%Y")
+    
+        cities = [{'city':city, 'temp':temp, 'condition':condition} for city, temp, condition in data]
+        data_json = {'title':'Popular Cities Forecast', 'date':today, 'cities':cities}
+        with open('output.json', 'w') as f:
+            json.dump(data_json, f,ensure_ascii=False)
+            
 
 
-print(list(get_forecast_data()))
+
+
+if __name__ == '__main__':
+    get_forecast_txt()
+    get_forecast_json()

@@ -1,0 +1,26 @@
+Popular Cities Forecast
+Date: 10/11/2025
+============================================================
+| City         |   Temperature (°C) | Condition           |
+|--------------|--------------------|---------------------|
+| Beijing      |                  5 | Sunny               |
+| Berlin       |                  7 | Mostly Cloudy       |
+| Buenos Aires |                 20 | Clear               |
+| Cairo        |                 20 | Partly Cloudy       |
+| Cape Town    |                 15 | Intermittent Clouds |
+| Hong Kong    |                 24 | Sunny               |
+| Istanbul     |                 13 | Mostly Clear        |
+| London       |                 14 | Showers             |
+| Los Angeles  |                 21 | Clear               |
+| Madrid       |                  6 | Mostly Cloudy       |
+| Mexico City  |                 18 | Mostly Clear        |
+| Moscow       |                  2 | Showers             |
+| Mumbai       |                 20 | Hazy Moonlight      |
+| New York     |                 14 | Showers             |
+| Paris        |                 10 | Showers             |
+| São Paulo    |                 16 | Mostly Cloudy       |
+| Singapore    |                 25 | Rain                |
+| Sydney       |                 23 | Partly Sunny        |
+| Tokyo        |                 16 | Mostly Sunny        |
+| Toronto      |                 -1 | Cloudy              |
+============================================================
