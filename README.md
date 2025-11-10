@@ -38,10 +38,12 @@ This will execute the scraper, which will then generate or overwrite the output.
 The script generates two files:
 
 ### 1. output.txt
+
 A human-readable text file containing the forecast formatted as a table.
 Example:
 Popular Cities Forecast
 Date: 10/11/2025
+
 ============================================================
 | City         |   Temperature (°C) | Condition           |
 |--------------|--------------------|---------------------|
